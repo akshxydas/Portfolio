@@ -334,9 +334,9 @@ figure {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: #000;
             border: 1px solid #000;
-            background: transparent !important; }
+            background: #ffffff }
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
-              background: transparent !important;
+              
               border: 1px solid #000 !important; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
@@ -941,7 +941,8 @@ body.offcanvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2c98f0;
+    /* background: #2c98f0; */
+    background-color: rgba(167, 167, 167, 0.8);
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1013,6 +1014,7 @@ body.offcanvas {
         .project .desc span {
           -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); } }
+
   .project:hover .desc {
     opacity: 1; }
     .project:hover .desc h3 {
@@ -1090,7 +1092,7 @@ body.offcanvas {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline; }
+    display: inline; }
     .colorlib-social li a {
       font-size: 22px;
       color: #000;
@@ -1098,7 +1100,7 @@ body.offcanvas {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
-      *display: inline;
+      display: inline;
       -webkit-border-radius: 7px;
       -moz-border-radius: 7px;
       -ms-border-radius: 7px;
@@ -1314,7 +1316,7 @@ body.offcanvas {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
     width: 30px;
     height: 2px;
     color: #000;
@@ -1427,3 +1429,13 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+.btn-offwhite {
+  background-color: #f8f9fa; /* Off-white color */
+  color: #000; /* Black or dark color for contrast */
+  border: 1px solid #ced4da; /* Optional: light border for definition */
+}
+
+.btn-offwhite:hover {
+  background-color: #e9ecef; /* Slightly darker shade for hover effect */
+}
