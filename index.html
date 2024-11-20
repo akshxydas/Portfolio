@@ -1,6 +1,79 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<!-- project-->
+		<style>
+			.project-container {
+				display: flex;
+				gap: 2rem;
+				align-items: flex-start;
+			}
+		
+			.project-image {
+				flex: 0 0 50%;
+			}
+		
+			.project-details {
+				flex: 0 0 45%;
+				padding: 1rem 0;
+			}
+		
+			.project {
+				position: relative;
+				width: 100%;
+				height: 300px;
+				background-size: cover;
+				background-position: center center;
+				transition: all 0.3s ease;
+			}
+		
+			.project .desc {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0, 0, 0, 0.8);
+				opacity: 0;
+				transition: all 0.3s ease;
+			}
+		
+			.project:hover .desc {
+				opacity: 1;
+			}
+		
+			.project .desc .con {
+				padding: 2rem;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+			}
+		
+			.project-title {
+				margin-bottom: 1.5rem;
+			}
+		
+			.project-details h3 {
+				margin-top: 0;
+			}
+		
+			.mt-3 {
+				margin-top: 1rem;
+			}
+		
+			@media (max-width: 768px) {
+				.project-container {
+					flex-direction: column;
+				}
+				
+				.project-image,
+				.project-details {
+					flex: 0 0 100%;
+				}
+			}
+		</style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>akshxydas.com</title>
@@ -8,6 +81,8 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
+	<link rel="stylesheet" href="css/dark-mode.css">
+	<script src="js/dark-mode.js"></script>
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -97,7 +172,7 @@
 					   					<div class="desc">
 						   					<h2>Hello World! <br>The Name's <h1>Akshay Das</h1></h2>
 						   					<h2> <a href="https://colorlib.com/" target="_blank"></a></h2>
-												<p><a href="images/cv.pdf" class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+												<p><a href="images/cv.pdf" class="btn btn-learn btn-offwhite">Download CV <i class="icon-download4"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -120,7 +195,7 @@
 										<h2 class="colorlib-heading">Who Am I?</h2>
 										<p>Highly motivated Full Stack Web Developer pursuing a Master’s in Computer Science with a strong
 foundation in Computer Science. Proven ability to lead teams and deliver high-quality, full stack web
-solutions using modern frameworks like React and Django. Passionate about creating innovative solutions and
+solutions using modern frameworks like React and Flask. Passionate about creating innovative solutions and
 always looking for the next challenge.</p></div>
 								</div>
 							</div>
@@ -150,23 +225,8 @@ always looking for the next challenge.</p></div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>I am happy to know you <br>that 2+ projects done sucessfully!</h2>
-									</div>
-								</div>
-							</div>
 						</div>
-					</div>
-				</div>
 			</section>
-
-
-			
-				
-		
-
 			<section class="colorlib-skills" data-section="skills">
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -177,15 +237,14 @@ always looking for the next challenge.</p></div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>Self Learning is the key factor in any CS Student's Life as infinite resourses are available for us</p>
+							<p>Self Learning Is The Key Factor In Any CS Student's Life As Infinite Resourses Are Available For Us.</p>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
 								<h3>C++</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-								    <span>75%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
@@ -195,8 +254,7 @@ always looking for the next challenge.</p></div>
 								<h3>Java</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								    <span>60%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
@@ -206,19 +264,17 @@ always looking for the next challenge.</p></div>
 								<h3>Python</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
-								<h3>Flutter</h3>
+								<h3>React</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-9" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-								    <span>50%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
@@ -228,8 +284,7 @@ always looking for the next challenge.</p></div>
 								<h3>R</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
@@ -239,8 +294,7 @@ always looking for the next challenge.</p></div>
 								<h3>HTML CSS</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
@@ -250,8 +304,17 @@ always looking for the next challenge.</p></div>
 								<h3>SQL</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>C</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
 								  	</div>
 								</div>
 							</div>
@@ -311,7 +374,7 @@ always looking for the next challenge.</p></div>
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingThree">
 									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">High School Secondary Education
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Higher Secondary Education
 									            </a>
 									        </h4>
 									    </div>
@@ -322,9 +385,20 @@ always looking for the next challenge.</p></div>
 									    </div>
 									</div>
 
-									
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">High School Education
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									        <div class="panel-body">
+												<p>Completed SSLC with full <b>A+</b> in all subjects </p>
+											</div>
+									    </div>
+									</div>
 
-									
 								</div>
 							</div>
 						</div>
@@ -378,7 +452,7 @@ always looking for the next challenge.</p></div>
 
 						<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
+					               <div class="timeline-icon color-3">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
@@ -386,17 +460,6 @@ always looking for the next challenge.</p></div>
 					            </div>
 					         </article>
 						 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="images/web.pdf">Introduction to Domain Names and Web Hosting</a> 
-									</div>
-					            </div>
-					         </article>
-
 					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-4">
@@ -437,92 +500,127 @@ always looking for the next challenge.</p></div>
 							<h2 class="colorlib-heading animate-box">Projects</h2>
 						</div>
 					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu">
-								<span><a href="#" class="active">Python</a></span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Project Mannira</a></h3>
-										<span>A web application to help Farmers in attaining information and sell their products</span>
-										<p> 
-											<a href="https://www.github.com/akshxydas/mannira" class="btn btn-success">Git Repo</a>
 
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<h3 class="project-title">Project Mannira</h3>
+								<div class="project-container">
+									<div class="project-image">
+										<div class="project" style="background-image: url(images/img-1.jpg);">
+											<div class="desc">
+												<div class="con">
+													<span><h3>PYTHON FLASK SQL HTML CSS</h3></span>
+													<a href="https://www.github.com/akshxydas/mannira" class="btn btn-success">Screenshots</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="project-details">
+										
+										<span>A web application designed to empower farmers by providing them with valuable information from Higher
+											Platforms. It enables farmers to easily sell their products online, reaching a wider audience and securing
+											better prices. Additionally, the platform facilitates the purchase of products from other farmers, fostering a
+											supportive agricultural community and ensuring access to diverse goods and resources</span>
+										<p class="mt-3">
+											<a href="https://www.github.com/akshxydas/mannira" class="btn btn-success">Git Repository</a>
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">ChatBot For Human Assistance</a></h3>
-										<span>An IBM project made using watsonX</span>
-										<a href="https://www.github.com/akshxydas/bot" class="btn btn-success">Git Repo</a>
+					</div>
 
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<h3 class="project-title">Air Canvas</h3>
+								<div class="project-container">
+									<div class="project-image">
+										<div class="project" style="background-image: url(images/img-3.jpg);">
+											<div class="desc">
+												<div class="con">
+													<span><h3>PYTHON MACHINE LEARNING HTML</h3></span>
+													<a href="https://github.com/akshxydas/Air-Canvas/" class="btn btn-success">Screenshots</a>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/blog-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Will be updated soon</a></h3>
-										<span>     </span>
+									<div class="project-details">
 										
+										<span>AR Canvas is a web application that allows users to draw and write with their bare hands by tracking hand
+										movements. It leverages a machine learning system to convert the saved canvas images into text files. This
+										innovative technology transforms hand-drawn content into digital text seamlessly and efficiently</span>
+										<p class="mt-3">
+											<a href="https://github.com/akshxydas/Air-Canvas/" class="btn btn-success">Git Repository</a>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						
-						
+					</div>
 					
-				</div>
 					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu">
-								<span>Web Design</span></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/blog-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">tbd</a></h3>
-										<span></span>
-										
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<h3 class="project-title">Hangman Game</h3>
+								<div class="project-container">
+									<div class="project-image">
+										<div class="project" style="background-image: url(images/img-4.png);">
+											<div class="desc">
+												<div class="con">
+													<span><h3>REACT HTML CSS</h3></span>
+													<a href="https://github.com/akshxydas/Hangman-REACT" class="btn btn-success">Screenshots</a>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu">
-								<span>Android</span></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/blog-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">tbd</a></h3>
-										<span></span>
+									<div class="project-details">
 										
+										<span>Hangman is a React app where players
+											guess letters to reveal a word, with wrong
+											guesses drawing a hangman. It highlights
+											skills in React, state management, and
+											game logic, offering real-time feedback
+											and visuals</span>
+										<p class="mt-3">
+											<a href="https://github.com/akshxydas/Hangman-REACT" class="btn btn-success">Git Repository</a>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>	
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<h3 class="project-title">Chatbot</h3>
+								<div class="project-container">
+									<div class="project-image">
+										<div class="project" style="background-image: url(images/img-2.jpg);">
+											<div class="desc">
+												<div class="con">
+													<span><h3>HTML IBM CLOUD</h3></span>
+													<a href="https://akshxydas.github.io/IBM-WatsonX-Chatbot/" class="btn btn-success">Live Demo</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="project-details">
+										
+										<span>The project aims to educate users on making sustainable choices
+											for a better future. Through an interactive chatbot, users can receive personalized advice and information on
+											eco-friendly practices and sustainable living. The chatbot provides tips on reducing waste, conserving
+											resources, and making mindful purchasing decisions. By engaging with the chatbot, users can learn practical
+											ways to contribute to a more sustainable and environmentally responsible lifestyle.s</span>
+										<p class="mt-3">
+											<a href="https://github.com/akshxydas/IBM-WatsonX-Chatbot" class="btn btn-success">Git Repository</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				<!-- <div class="row">
 						<div class="col-md-12 animate-box">
 							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
